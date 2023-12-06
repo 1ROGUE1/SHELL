@@ -1,1 +1,1 @@
-(Get-Mailbox -OrganizationalUnit "OU=Disabled_Users,DC=moscow,DC=srsh,DC=ru" -ResultSize unlimited | Get-MailboxStatistics | Select-Object DisplayName,TotalItemSize,ItemCount,LastLogonTime).count
+(Get-Mailbox -OrganizationalUnit "ObjectPath" -ResultSize unlimited | Get-MailboxStatistics | Select-Object DisplayName,TotalItemSize,ItemCount,LastLogonTime).count
